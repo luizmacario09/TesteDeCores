@@ -1,0 +1,117 @@
+menu {
+    background: #d9d7d5;
+    padding: 0.25rem;
+    overflow-y: scroll;
+    white-space: nowrap;
+  }
+
+  span {
+    background: #767775;
+    color: #ffffff;
+    display: inline-block;
+    margin: 0.25rem;
+    padding: 0.5rem;
+  }
+.column {
+    width: 100%;
+  }
+  
+  @media (min-width: 600px) {
+    .column {
+      width: 50%;
+    }
+  }
+.nav-bar { 
+    padding:1em; 
+    text-align:center; 
+  }
+  .nav-bar .nav-link {
+    padding: 8px 0;
+    margin: 0 20px;
+    color: #797878;
+    font-size: 22px;
+    text-decoration: none;
+    position: relative;
+  }
+  .nav-bar .nav-link::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    padding: 8px 0;
+    max-width: 0;
+    text-decoration: underline;
+    text-underline-offset: 8px;
+    color: #0082fa;
+    content: attr(data-hover);
+    -webkit-transition: max-width 0.5s;
+    -moz-transition: max-width 0.5s;
+    transition: max-width 0.5s;
+  }
+  .nav-bar .nav-link:hover::before { max-width: 100%; }
+  .nav-bar .active {
+    color: #0082fa;
+    text-decoration: underline;
+    text-underline-offset: 8px;
+  }
+.div{
+  display: flex;
+  align-items: center;
+    
+}
+body{
+    text-align: justify, center; 
+}
+center{
+ justify-items: center;
+}
+.rodape{
+    background-color: #f36e20;
+    color: white;
+    height: auto;
+    width: 100%;
+    font-size: 14px;
+    font-family: helvetica;
+}
+.rodape a{
+    text-decoration: none;
+    color: white;
+}
+.rodape p{
+    margin-bottom: 5px;
+}
+.rodape-div{
+    display: flex;
+    flex-wrap: wrap;
+    width:100%;
+    margin: auto;
+    align-items: stretch;
+    padding: 60px 10px 40px 10px;
+}
+.rodape-div-1, .rodape-div-2, .rodape-div-3, .rodape-div-4{
+    display: flex;
+    width: calc(100% / 4 - 20px);
+    padding: 10px;
+}
+.rodape span{
+    font-size: 20px;
+    color: white;
+}
+.rodape-direitos{
+    width: calc(100% - 20px);
+    background-color: black;
+    padding: 10px;
+    margin: 0px;
+    text-align: center;
+}
+/*mobile*/
+@media (max-width: 768px) {
+    .rodape-div-1, .rodape-div-2, .rodape-div-3, .rodape-div-4{
+        width: calc(50% - 20px);
+        padding: 10px;
+    }
+    .rodape-div{
+        padding: 60px 0px 40px 0px;
+    }
+}
+
