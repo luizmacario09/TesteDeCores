@@ -24,6 +24,9 @@ menu {
 .nav-bar { 
     padding:1em; 
     text-align:center; 
+    color: red;
+    display: flex;
+    align-items: center;
   }
   .nav-bar .nav-link {
     padding: 8px 0;
