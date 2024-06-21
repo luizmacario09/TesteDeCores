@@ -16,17 +16,24 @@ menu {
     width: 100%;
   }
   
-  @media (min-width: 600px) {
+  @media (min-width: 650px) {
     .column {
       width: 50%;
     }
   }
+
+@media(max-width: 650px){
+  .column{
+    width: 100%
+  }
+}
 .nav-bar { 
     padding:1em; 
     text-align:center; 
     color: red;
     display: flex;
     align-items: center;
+    
   }
   .nav-bar .nav-link {
     padding: 8px 0;
